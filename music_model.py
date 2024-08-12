@@ -9,7 +9,7 @@ app = Flask(__name__)
 CORS(app)  # This will enable CORS for all routes
 
 # Load pre-trained model
-model = tf.keras.models.load_model(r"C:\Users\patel\Music-Genre-Classification\MusicGenre_CNN_79.73.h5")
+model = tf.keras.models.load_model("./MusicGenre_CNN_79.73.h5")
 
 # Genre dictionary
 genre_dict = {
